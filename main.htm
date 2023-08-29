@@ -4,43 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Year Make Model Interface</title>
-    <script src="main.js"></script>
 </head>
 <body>
 
-    <p>
-        <label for="initial-year">Intial Year:</label>
-        <input type="text" id="initial-year" required>
-    </p>
+        <p>
+            <label for="initial-year">Intial Year:</label>
+            <input type="tel" id="initial-year" required>
+        </p>
+    
+        <p>
+            <label for="final-year">Final Year:</label>
+            <input type="tel" id="final-year" required>
+        </p>
+    
+        <p>
+            <label for="Make">Make:</label>
+            <input type="text" id="make" required>
+        </p>
+    
+        <p>
+            <label for="Model">Model:</label>
+            <input type="text" id="model" required>
+        </p>
+    
+        <p>
+            <label for="trim">Trim:</label>
+            <input type="text" id="trim" required>
+        </p>
+    
+        <p>
+            <label for="enigine-name">Engine Name:</label>
+            <input type="text" id="engine" required>
+        </p>
 
-    <p>
-        <label for="final-year">Final Year:</label>
-        <input type="text" id="final-year" required>
-    </p>
 
-    <p>
-        <label for="Make">Make:</label>
-        <input type="text" id="make" required>
-    </p>
+    <button onclick="generateTemplate();">Generate</button>
+    <button onclick="clearList();">Clear</button>
 
-    <p>
-        <label for="Model">Model:</label>
-        <input type="text" id="model" required>
-    </p>
 
-    <p>
-        <label for="trim">Trim:</label>
-        <input type="text" id="trim" required>
-    </p>
-
-    <p>
-        <label for="enigine-name">Engine Name:</label>
-        <input type="text" id="engine" required>
-    </p>
-
-    <button onclick="generateNewLineTemplate();">Generate</button>
 
     <p id="output"></p>
 
+    <script src="main.js"></script>
 </body>
 </html>

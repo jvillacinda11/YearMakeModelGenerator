@@ -21,6 +21,12 @@ function generateTemplate(event) {
     
 }
 
+document.addEventListener('keydown', function(event){
+    if(event.key === 'Escape'){
+        clearList();
+    }
+})
+
 function clearList(){
     let outputDiv = document.getElementById("output");
     outputDiv.innerHTML = ""; 

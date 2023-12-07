@@ -4,46 +4,79 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="https://www.weistec.com/favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <title>Year Make Model Generator</title>
 </head>
 <body>
-<form onsubmit="generateTemplate(event);">
+<br><br>
 
-    <p>
-        <label for="initial-year">Intial Year:</label>
-        <input type="tel" id="initial-year" required>
-    </p>
+<div class="container">
+    <div class="row">
 
-    <p>
-        <label for="final-year">Final Year:</label>
-        <input type="tel" id="final-year" required>
-    </p>
+        <div class="col-3">
+        <form class="row g-1" onsubmit="generateTemplate(event);">
+                <div class="col-12">
+                    <label class="form-label" for="initial-year">Intial Year:</label>
+                    <input class="form-control" type="tel" id="initial-year" required>
+                </div>
+            
+            
+                    <div class="col-12">
+                        <label class="form-label" for="final-year">Final Year:</label>
+                        <input class="form-control" type="tel" id="final-year" required>
+                    </div>
+            
+            
+            
+                    <div class="col-12">
+                        <label class="form-label" for="Make">Make:</label>
+                        <input class="form-control" type="text" id="Make" required>
+                    </div>
+            
+            
+            
+                    <div class="col-12">
+                        <label class="form-label" for="Model">Model:</label>
+                        <input class="form-control" type="text" id="Model" required>
+                    </div>            
+            
+            
+                    
+                    <div class="col-12">
+                        <label class="form-label" for="trim">Trim:</label>
+                        <input class="form-control" type="text" id="trim" required>
+                    </div>
+            
+            
+            
+                    <div class="col-12">
+                        <label class="form-label" for="engine-name">Engine Name:</label>
+                        <input class="form-control" type="text" id="engine-name" required>
+                    </div>
+            
+                        
+                    <input type="submit" style="display: none;">
+                    
+                </form>
+            </div>
+            <div class="col-9">
+                <p id="output"></p>
+            </div>
+    </div>
+ <br>
+<div class="row g-4">
+    <div class="col-12">
+        <button onclick="generateTemplate(event);">Generate</button>
+        <button onclick="clearList();">Clear</button>
+    </div>
+</div>
 
-    <p>
-        <label for="Make">Make:</label>
-        <input type="text" id="Make" required>
-    </p>
-
-    <p>
-        <label for="Model">Model:</label>
-        <input type="text" id="Model" required>
-    </p>
-
-    <p>
-        <label for="trim">Trim:</label>
-        <input type="text" id="trim" required>
-    </p>
-
-    <p>
-        <label for="engine-name">Engine Name:</label>
-        <input type="text" id="engine-name" required>
-    </p>
-    <input type="submit" style="display: none;">
-</form>
 
 
-    <button onclick="generateTemplate(event);">Generate</button>
-    <button onclick="clearList();">Clear</button>
+</div>
+
+  
+
 
     <p>
         <a href="https://github.com/jvillacinda11/YearMakeModelGenerator" target="_blank">Source Code</a>
@@ -51,8 +84,9 @@
 
 
 
-    <p id="output"></p>
+
 
     <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>

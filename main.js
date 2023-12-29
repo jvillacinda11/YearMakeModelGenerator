@@ -12,9 +12,12 @@ function generateTemplate(event) {
     let outputDiv = document.getElementById("output");
     if (i<=f) {
         for (let index = i; index <= f; index++) {
-            let template = `${index}>${make}>${model}>${trim}>${engine}<br>`;
-            outputDiv.innerHTML+=template;
-        }
+
+
+                let template = `${index}>${make}>${model}>${trim}>${engine}\r\n`;
+                outputDiv.innerHTML+=template;
+            }
+
     } else {
         alert("Final year must greater than or equal to intial year!")        
     }
